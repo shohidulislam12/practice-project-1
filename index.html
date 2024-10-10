@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mealdb</title>
+    <!-- ||Tailwind CSS Configuration -->
+ <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(139, 195, 74)',
+                        secondary: 'rgb(17, 17, 17)',
+                        body: 'rgb(248, 246, 243)',
+                        accent: 'rgb(106, 151, 57)',
+                        body_neutral: 'rgb(51, 51, 51)',
+                    },
+                    fontFamily: {
+                          'lato': [' Lato', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        leaf: "url('./images/leaf01.png')",
+                        call_to_action: "url('./images/call.jpg')",
+                    },
+                },
+            },
+        }
+ </script>
+
+<!-- tailwind css and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- ||Font awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="lato">
+<nav class="container mx-auto my-5 py-2  flex justify-between"> <div><img src="./images/Tasty_HUT.png" alt=""></div> <div><button class="btn text-black bg-[#FFC107]">Sign Up</button></div></nav>
+<!-- banner section -->
+<section>
+    <div
+    class="hero h-[600px]"
+    style="background-image: url(./images/banner_1.png);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-overbold">Taste Our Delicious <br>
+            Best Foods</h1>
+        <p class="mb-5">
+          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+          quasi. In deleniti eaque aut repudiandae et a id nisi.
+        </p>
+        <div class="join">
+            <input class="input input-bordered join-item" placeholder="Search any food" type="text" />
+            <button class="btn join-item rounded-xl bg-[#FFC107]">search</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section -->
+<section  class="my-10 py-5">
+    <h1 class="text-3xl font-bold text-center">Your Favourite Food</h1>
+    <div id="cardcontainer" class="grid grid-cols-1 md:grid-cols-2 container mx-auto gap-5 my-5 ">
+        <!-- card-1 -->
+
+
+
+
+
+
+    </div>
+  <div class="text-center">  <button onclick="showall()" class="btn join-item rounded-xl text-center bg-[#FFC107]">Show All</button></div>
+</section>
+<!-- details modal -->
+ <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+
+</dialog>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
